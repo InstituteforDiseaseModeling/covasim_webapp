@@ -39,16 +39,22 @@ more information, see documentation for venv_ or Anaconda_.
 Quick start guide
 ==================
 
-1.  Clone a copy of this repository::
+1.  Clone a copy of this repository:
+
+.. code-block:: shell
 
     git clone https://github.com/institutefordiseasemodeling/covasim_webapp
 
-2.  Navigate to the root of the repository and install the Covasim Webapp Python package::
+2.  Navigate to the root of the repository and install the Covasim Webapp Python package:
+
+.. code-block:: shell
 
     cd covasim_webapp
     python setup.py develop
 
-3. Run the application via Flask::
+3. Run the application via Flask:
+
+.. code-block:: shell
 
     cd covasim_webapp
     python cova_app.py
