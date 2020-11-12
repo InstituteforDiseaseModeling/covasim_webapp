@@ -1,0 +1,30 @@
+name: Covasim Webapp CI workflow
+on: [pull_request]
+
+jobs:
+  install_and_test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        python-version: ['3.8']
+    name: Run tests
+    steps:
+      - name: Set repo owner env variable
+        shell: python
+        run: print("::set-env name=GITHUB_OWNER::{}".format('${{github.repository}}'.split('/')[0]))
+      - name: Checkout sources
+        uses: actions/checkout@v2
+      - uses: actions/setup-python@master
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: x64
+      - name: Install Covasim Webapp
+        run: python setup.py develop
+      - name: Run integration tests
+        working-directory: ./tests
+        run: |
+          pip install pytest pytest-parallel
+          pytest test*.py --workers auto --durations=0 # Run actual tests
