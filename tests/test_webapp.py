@@ -4,7 +4,7 @@ Test the webapp
 
 #%% Imports and settings
 import sciris as sc
-import covasim.webapp as cw
+import covasim_webapp as cw
 
 
 #%% Define the tests
