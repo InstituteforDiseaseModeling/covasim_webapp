@@ -45,14 +45,25 @@ Quick start guide
 
 2.  Navigate to the root of the repository and install the Covasim Webapp Python package::
 
-          python setup.py develop
+    cd covasim_webapp
+    python setup.py develop
+
+3. Run the application via Flask::
+
+    cd covasim_webapp
+    python cova_app.py
+
+4. Go to ``localhost:8188`` in your browser to view the webapp.
+
+See the `webapp README`_ for more information.
+
+.. _webapp README: ./covasim_webapp
 
 
 Docker
 ======
 
-This folder contains the ``Dockerfile`` and other files that allow Covasim to be
-run as a webapp via Docker. See the `Docker README`_ for more information.
+This folder contains the ``Dockerfile`` and other files that allow Covasim to be run as a webapp via Docker. See the `Docker README`_ for more information.
 
 .. _Docker README: ./docker
 
@@ -60,13 +71,4 @@ run as a webapp via Docker. See the `Docker README`_ for more information.
 Disclaimer
 ==========
 
-The code in this repository was developed by IDM to support our research in
-disease transmission and managing epidemics. We’ve made it publicly available
-under the Creative Commons Attribution-ShareAlike 4.0 International License to
-provide others with a better understanding of our research and an opportunity to
-build upon it for their own work. We make no representations that the code works
-as intended or that we will provide support, address issues that are found, or
-accept pull requests. You are welcome to create your own fork and modify the
-code to suit your own modeling needs as contemplated under the Creative Commons
-Attribution-ShareAlike 4.0 International License. See the contributing and code of conduct
-READMEs for more information.
+The code in this repository was developed by IDM to support our research in disease transmission and managing epidemics. We’ve made it publicly available under the Creative Commons Attribution-ShareAlike 4.0 International License to provide others with a better understanding of our research and an opportunity to build upon it for their own work. We make no representations that the code works as intended or that we will provide support, address issues that are found, or accept pull requests. You are welcome to create your own fork and modify the code to suit your own modeling needs as contemplated under the Creative Commons Attribution-ShareAlike 4.0 International License. See the contributing and code of conduct READMEs for more information.

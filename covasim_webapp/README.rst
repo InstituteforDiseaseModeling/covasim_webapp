@@ -4,10 +4,11 @@ Run Covasim in the web UI
 
 The web UI consists of
 
-- Static files e.g. ``index.html``
-- A Flask app in ``covid_app.py`` wrapped in a Sciris App
+- Static files e.g. ``index.html``;
+- A ScirisWeb/Flask app in ``cova_app.py``.
 
 It can be served in two ways: local testing or deployment.
+
 
 Quick local testing
 ===================
@@ -18,10 +19,14 @@ To run the app locally via Twisted, simply run the following:
 
     ./launch_flask
 
+You can also run ``python cova_app.py``.
+
+
 Deployment
 ==========
 
 Recommended deployment is using ``nginx`` to serve the static files, and ``gunicorn`` to run the Flask app.
+
 
 Requirements
 ------------
@@ -55,6 +60,7 @@ For example, this will start it running at localhost:8188::
         }
     }
 
+
 Run gunicorn
 ------------
 
@@ -73,10 +79,3 @@ For example::
     screen -R cova_app
 
 Note that for local development, the ``--reload`` flag to the ``gunicorn`` command automatically reloads the site. This can be helpful if using the ``nginx+gunicorn`` setup for local development.
-
-Docker
-======
-
-See :doc:`docker` or the `Docker README`_.
-
-.. _docker README: https://github.com/InstituteforDiseaseModeling/covasim/tree/master/docker
