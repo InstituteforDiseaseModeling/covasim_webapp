@@ -9,7 +9,8 @@ but can also do e.g.
 
 to launch with 48 workers.
 
-Version: 2020mar22
+If running with nginx, note that the site will be available at 
+the nginx port, not the gunicorn port.
 '''
 
 import os

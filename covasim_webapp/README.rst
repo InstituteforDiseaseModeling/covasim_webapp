@@ -53,7 +53,7 @@ For example, this will start it running at localhost:8188::
         listen 8188;
         server_name localhost;
         location / {
-            root /home/my_username/covasim/covasim/webapp;
+            root /home/my_username/covasim_webapp/covasim_webapp;
         }
         location /api {
             proxy_pass http://127.0.0.1:8097/;
@@ -69,7 +69,7 @@ Run gunicorn
 For example::
 
 
-    cd covasim/covasim/webapp
+    cd covasim_webapp/covasim_webapp
     screen -S cova_app
     ./launch_gunicorn
     <Ctrl+D>
