@@ -13,14 +13,12 @@ import tempfile
 import traceback
 import numpy as np
 import sciris as sc
+import scirisweb as sw
 import covasim as cv
 import shutil as sh
 from pathlib import Path
 import plotly.figure_factory as ff
 
-# Check requirements, and if met, import scirisweb
-cv.requirements.check_scirisweb(die=True)
-import scirisweb as sw
 
 # Create the app
 app = sw.ScirisApp(__name__, name="Covasim")
