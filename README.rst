@@ -10,7 +10,7 @@ The scientific paper describing Covasim is available at http://paper.covasim.org
 
 The Covasim webapp is available at http://app.covasim.org.
 
-Note that this repository is for the **webapp only**. The main Covasim repository is available at https://github.com/institutefordiseasemodeling/covasim. Most users will want to use the main Covasim repository; this repository is only needed if you wish to run the webapp locally instead of using the link above.
+Note that this repository is the code for the **webapp only**. The main Covasim repository is available at https://github.com/institutefordiseasemodeling/covasim. Most users will want to use the main Covasim repository, or access the webapp using the link above. This repository is only needed if you are a developer and wish to run the webapp locally.
 
 Questions or comments can be directed to us at covasim@idmod.org, or on this project's
 GitHub_ page. Full information about Covasim is provided in the Covasim documentation_.
