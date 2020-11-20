@@ -8,12 +8,12 @@ The scientific paper describing Covasim is available at http://paper.covasim.org
 
     Kerr CC, Stuart RM, Mistry D, Abeysuriya RG, Hart G, Rosenfeld R, Selvaraj P, Núñez RC, Hagedorn B, George L, Izzo A, Palmer A, Delport D, Bennette C, Wagner B, Chang S, Cohen JA, Panovska-Griffiths J, Jastrzębski M, Oron AP, Wenger E, Famulare M, Klein DJ (2020). **Covasim: an agent-based model of COVID-19 dynamics and interventions**. *medRxiv* 2020.05.10.20097469; doi: https://doi.org/10.1101/2020.05.10.20097469.
 
-This repository is for the **webapp only**. The main Covasim repository is available at https://github.com/institutefordiseasemodeling/covasim.
-
 The Covasim webapp is available at http://app.covasim.org.
 
+Note that this repository is for the **webapp only**. The main Covasim repository is available at https://github.com/institutefordiseasemodeling/covasim. Most users will want to use the main Covasim repository; this repository is only needed if you wish to run the webapp locally instead of using the link above.
+
 Questions or comments can be directed to us at covasim@idmod.org, or on this project's
-GitHub_ page. Full information about Covasim is provided in the documentation_.
+GitHub_ page. Full information about Covasim is provided in the Covasim documentation_.
 
 .. _GitHub: https://github.com/institutefordiseasemodeling/covasim_webapp
 .. _documentation: https://docs.covasim.org
