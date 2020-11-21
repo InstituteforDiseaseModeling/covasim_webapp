@@ -10,12 +10,12 @@ The scientific paper describing Covasim is available at http://paper.covasim.org
 
 The Covasim webapp is available at http://app.covasim.org.
 
-Note that this repository is the code for the **webapp only**. The main Covasim repository is available at https://github.com/institutefordiseasemodeling/covasim. Most users will want to use the main Covasim repository, or access the webapp using the link above. This repository is only needed if you are a developer and wish to run the webapp locally.
+Note that this repository is the code for the **webapp only**. The main Covasim repository is available at https://github.com/InstituteforDiseaseModeling/covasim. Most users will want to use the main Covasim repository, or access the webapp using the link above. This repository is only needed if you are a developer and wish to run the webapp locally.
 
 Questions or comments can be directed to us at covasim@idmod.org, or on this project's
 GitHub_ page. Full information about Covasim is provided in the Covasim documentation_.
 
-.. _GitHub: https://github.com/institutefordiseasemodeling/covasim_webapp
+.. _GitHub: https://github.com/InstituteforDiseaseModeling/covasim_webapp
 .. _documentation: https://docs.covasim.org
 
 
@@ -43,16 +43,15 @@ Quick start guide
 
 .. code-block:: shell
 
-    git clone https://github.com/institutefordiseasemodeling/covasim_webapp
+    git clone https://github.com/InstituteforDiseaseModeling/covasim_webapp
 
 2.  Navigate to the root of the repository and install the Covasim Webapp Python package:
 
 .. code-block:: shell
 
-    cd covasim_webapp
     python setup.py develop
 
-3. Run the application via Flask:
+3. Change to package folder and run the application via Flask:
 
 .. code-block:: shell
 
