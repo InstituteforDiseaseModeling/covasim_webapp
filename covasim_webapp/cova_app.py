@@ -148,7 +148,7 @@ def get_version():
 @app.register_RPC()
 def get_licenses():
     cwd = Path(__file__).parent
-    repo = cwd.joinpath('../..')
+    repo = cwd.joinpath('..')
     license = repo.joinpath('LICENSE').read_text(encoding='utf-8')
     notice = repo.joinpath('licenses/NOTICE').read_text(encoding='utf-8')
     return {
@@ -160,9 +160,7 @@ def get_licenses():
 @app.register_RPC()
 def get_location_options(enable=False):
     ''' Get the list of options for the location select '''
-    json1 = cv.data.country_age_data.get()
-    json2 = cv.data.state_age_data.get()
-    locations = list(json1.keys()) + list(json2.keys())
+    locations = cv.data.show_locations(output=True).age_distributions
     if enable:
         return locations
     else:
